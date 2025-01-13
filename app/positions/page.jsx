@@ -1,9 +1,9 @@
-import Nav from "../components/nav";
+import Nav from "../../components/nav";
 function Positions() {
     return(
         <div>
             <Nav />
-            <h1>hello</h1>
+            <h1>Positions</h1>
         </div>
     )
 }
