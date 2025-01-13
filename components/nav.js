@@ -5,7 +5,6 @@ import eggLogo from "../icons/logo.png";
 import cartIcon from "../icons/carton.png";
 import { useEffect } from 'react';
 import Link from 'next/link';
-
 function Nav() {
     useEffect(() => {
         const hamburger = document.querySelector('.hamburger');
