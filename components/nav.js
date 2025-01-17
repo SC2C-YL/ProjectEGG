@@ -8,6 +8,7 @@ import Link from 'next/link';
 function Nav() {
     useEffect(() => {
         const hamburger = document.querySelector('.hamburger');
+        //hieee
         const navContent = document.querySelector('.nav-content');
     
         hamburger.addEventListener('click', () => {
