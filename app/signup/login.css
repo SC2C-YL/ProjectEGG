@@ -10,3 +10,9 @@ nav {
 .return {
     position: absolute;
 }
+
+.back-arrow {
+    width: 5em;
+    height: 5em;
+    padding-left: 1em;
+}

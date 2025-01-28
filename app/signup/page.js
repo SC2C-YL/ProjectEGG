@@ -1,14 +1,12 @@
-import ".login.css";
+import "./login.css";
 import leftArrow from "../../icons/Left_Arrow.png";
 function signIn() {
     return (
-<>
-<nav>
-    <img className="return" src={leftArrow}>
-
-    </img>
-</nav>
-</>
+        <>
+        <nav className = "Sign-In-Navbar">
+            <img src = {leftArrow.src } className =" back-arrow"/>
+        </nav>
+        </>
     )
 }
 
