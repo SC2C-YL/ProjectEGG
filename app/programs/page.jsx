@@ -1,18 +1,18 @@
-import Nav from "./components/nav";
+import Nav from "../../components/nav";
+import Card from '../../components/program-grid';
+import './programs.css';
 
 function programs() {
     return(
         <div>
             <Nav />
-            <h1>cartonId</h1>
-            <h1>carton</h1>
-            <h1>carton</h1>
-            <h1>carton</h1>
-            <h1>carton</h1>
-            <h1>scholarships</h1>
-            <h1>scholarships</h1>
+            <div class="button-grid">
+            <Card image="/icons/tutoring.png" path="./programs/tutoring" title="Tutoring" />
+            <Card image='/icons/SAT.png' path="/programs/SAT" title="SAT" />
+            <Card image='/icons/kids.png' path="/programs/kids" title="Kids" />
+            <Card image='/icons/college.png' path="/programs/colleges" title="College" />
+            </div>
         </div>
     )
 }
-
 export default programs;

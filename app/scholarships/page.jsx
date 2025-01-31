@@ -1,4 +1,5 @@
 import Nav from "../../components/nav";
+import './scholarship.css';
 
 function scholarships() {
     return(
