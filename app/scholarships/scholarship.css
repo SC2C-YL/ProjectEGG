@@ -6,3 +6,25 @@ html, body {
 h1 {
     text-size-adjust: 100px;
 }
+.filter-grid {
+    display: flex;
+    justify-content: center;
+}
+.FButton {
+  margin-left: 1rem;
+  margin-right: 1rem;
+ background-color: #FFD966; 
+ border-radius: 25px;
+ padding: 1%;
+ padding-left: 2%;
+ padding-right: 2%;
+
+
+}
+.H1-Div {
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
