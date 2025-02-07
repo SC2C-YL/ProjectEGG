@@ -1,3 +1,4 @@
+import Link  from "next/link";
 function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
 
     return (
@@ -21,7 +22,9 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
                             <h4 className="Bolder">{Cdate}</h4>
                         </div>
                         <div className="Apply-box">
-                            <button className="Apply">Apply now</button>
+                            <Link href="/scholarships/specificS" className="Apply">
+                                <button>Apply</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -115,5 +115,183 @@ padding-left: .5rem;
     background-color:#939393;
     padding:.5rem;
     border-radius: 16px;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 25%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Back2Page {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #F1C232;
+    padding-left: 2.15em;
+    padding-top: 2rem;
+}
+.SStitle {
+    display: flex;
+    justify-content: space-between;
+}
+.ScholarshipTitle {
+    font-weight: 1000;
+    padding-left: 1em;
+    padding-top: .3em;
+    max-width: 60%;
+    font-size: 4em;
+}
+
+.AddtoCart {
+    margin-left: 3em;
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: #AF8400;
+    padding: 1rem;
+    margin-top: 1.5em;
+    border-radius: 30px;
+    margin-right: 2em;
+    color: #FFFFFF;
+
+}
+
+.deadlineContainer {
+    display: flex;
+}
+.deadline {
+    background-color: #F1C232;
+    color:white;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-left: 2em;
+    padding: .5rem;
+    border-radius:10px;
+}
+
+.InfoContainer {
+    background-color: #F1C232;
+    margin: 4em;
+    margin-top: 2em;
+    min-height: 40em;
+    border-radius: 12px;
+    padding:1em;
+    display: flex;
+}
+
+.SSDetails {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 37em;
+   
+}
+
+.open-close {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+}
+.SStitleBox {
+    display: flex;
+    justify-content: center;
+}
+.SSTitle {
+    font-weight:bolder;
+    font-size: 3em;
+    color: #FFFFFF;
+}
+h4 {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color:#FFFFFF
+}
+.SStext {
+    margin: 2em;
+    font-size: 1.1em;
+    line-height: 2em;
+    color: #FFFFFF;
+}
+.applyNowBox {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    margin-left: 2%;
+}
+.applyNow{
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    color: #AF8400;
+    padding: 1rem;
+}
+
+
+ .middleLineBox {
+    display:flex;
+    width:10px;
+    max-height: 50em;
+    align-items: center;
+} 
+
+    
+.middleLine {
+    display:flex;
+    width:10px;
+    max-height: 50em;
+    
+}
+.vl {
+    border-left: .7px solid rgb(0, 0, 0);
+    height: 30em;
+  }
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    width: 26em;
+}
+.leftSideTitle {
+    display: flex;
+    justify-content: center;
+
+}
+.money {
+    color:white;
+    font-weight: bolder;
+    font-size: 3em;
+    border-radius: 10px;
+    padding-top: 10px;
+}.basements-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+}
+.basements {
+    list-style-type: square;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+
+ul li::marker {
+    font-size: 4em;
+    margin-top:2em ;
+  }
+li {
+    margin-top: 20px;
+}
+
