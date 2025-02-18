@@ -203,5 +203,11 @@
     .search-container {
       margin: 10px 0;
     }
+    .bars {
+     font-weight: bolder;
+     text-shadow: 2px 0 #888888;
+     letter-spacing:2px;
+     text-shadow: -1px 1px, 1px 1px, 1px 1px;
+    }
   }
   

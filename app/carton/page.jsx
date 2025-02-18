@@ -1,9 +1,10 @@
 import Nav from "../../components/nav";
 import "./carton.css"
-import Saved from "../../components/carton-sections"
+import Saved from "../../components/carton-sections";
+import "../globals.css"
 function carton() {
     return(
-        <div className="body">
+        <div className="bodyy">
             <Nav />
             <header>
                 <button className="addMoreBackground">

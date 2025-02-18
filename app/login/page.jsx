@@ -1,4 +1,4 @@
-import "./signup.css";
+import "./login.css";
 import Input from "../../components/input"
 function signUp() {
     return (
@@ -21,16 +21,19 @@ function signUp() {
                 </form>
                 <div>
                     <div className="orMovingDiv">
-                        <h5>or</h5>
+                        <h5>OR</h5>
                     </div>
                     <hr></hr>
                 </div>
                 <div className="bottomButtons">
                     <div className="bottomButton">
-                        <p>new user? Create an account</p>
+                        <p>new user?</p>
+                        <p>Create an account</p>
                     </div>
                     <div className="bottomButton2">
-                        <img></img>
+                        <div>
+                        <img src="/icons/google.png" className="googleIcon"></img>
+                        </div>
                         <p>sign in with google</p>
                     </div>
                 </div>

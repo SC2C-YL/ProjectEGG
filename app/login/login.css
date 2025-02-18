@@ -53,19 +53,6 @@ input {
     padding-left: 1em;
     padding-right: 1em;
 }
-.input {
-    border-width: 5px;
-    width:25em;
-    height:4em;
-    border-color: #000000;
-    border-radius: 40px;
-    margin-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-}
 
 .submit {
     background-color: #F1C232;
@@ -112,6 +99,7 @@ h5 {
     padding-right: 1em;
     position: absolute;
     background-color: #FFFFFF;
+    color:#4D4D4D;
 }
 
 .bottomButton {
@@ -149,14 +137,9 @@ p {
     text-shadow: 1px 0 #000000;
     letter-spacing:1px;
 }
+
 .googleIcon {
     width:3em;
     margin-right: 1em;
-    padding-top: .1em;
-}
-
-hr {
-    border-width:2px;
-    border-top: #4D4D4D;
-    margin-top:1em;
+    
 }

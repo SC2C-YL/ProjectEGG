@@ -1,9 +1,9 @@
 "use client"
 
 import "./css/nav.css";
-
 import { useEffect } from 'react';
 import Link from 'next/link';
+
 
 function Nav() {
     useEffect(() => {
@@ -35,10 +35,10 @@ function Nav() {
     <div className="nav-content" id="nav-content">
       <div className="nav-links">
         <Link href="/" className="active">Home</Link>
-        <Link href="/programs">Programs</Link>
-        <Link href="/scholarships">Scholarships</Link>
-        <Link href="/positions">Positions</Link>
-        <Link href="/support">Support</Link>
+        <Link href="/programs"className="bars">Programs</Link>
+        <Link href="/scholarships" className="bars">Scholarships</Link>
+        <Link href="/positions"className="bars">Positions</Link>
+        <Link href="/support"className="bars">Support</Link>
       </div>
       <div className="search-container">
         <input type="text" placeholder="Search" className="search-bar" />

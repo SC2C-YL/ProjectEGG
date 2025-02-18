@@ -1,4 +1,6 @@
-.body {
+.bodyy {
+    width: 100vw;
+    max-width: 100%;
     margin:0%;
     padding: 0%;
     background-color: #F1F2ED;
@@ -29,7 +31,12 @@ header {
 .addMoreText {
     font-size: 2.1em;
     font-weight: 900;
-    color: white
+    color: white;
+    text-shadow: 1px 0 #FFFF;
+    letter-spacing:1px;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+    
 }
 .title {
     display: flex;
@@ -41,6 +48,8 @@ header {
     color: #C2B897;
     font-weight: 900;
     margin-top: -.5em;
+    text-shadow: 1px 0 #C2B897;
+    letter-spacing:1px;
 }
 .titleContainer {
     display:flex;
@@ -62,18 +71,21 @@ font-weight: 900;
 
 .container {
 background-color: #FFE598;
-margin:2em;
+margin-left: 2em;
+margin-top:2em;
+margin-bottom:2em;
 display: flex;
-width: 100em;
 height: 13em;
-display: flex;
 align-items: center;
 padding-left: 1em;
 border-radius: 2em;
 justify-content: space-between;
+max-width: none;
+width: 96%;
 }
 .half-container {
     display: flex;
+    
 }
 .IMG {
     max-width: 10em;
@@ -81,7 +93,7 @@ justify-content: space-between;
 }
 
 .STitle {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 900;
     color: #F1C232;
     margin-top: -.25em;
@@ -129,6 +141,6 @@ width:4em;
     margin-left: 8%;
     margin-right:8%;
     float: right;
-
-    
+    color:black;
+    font-weight: 900;
 }
