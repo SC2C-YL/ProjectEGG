@@ -1,0 +1,134 @@
+.body {
+    margin:0%;
+    padding: 0%;
+    background-color: #F1F2ED;
+}
+header {
+    display:flex;
+    margin-top: 1em;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.addMoreBackground {
+    display: flex;
+    background-color: #FFD966;
+    align-items: center;
+    max-width: 13em;
+    line-height: 30px;
+    height: 6em;
+    border-radius: 30px;
+}
+.addMoreIcon {
+    max-width: 60px;
+    margin-right: .5em;
+    margin-left: 1em;
+}
+
+.addMoreText {
+    font-size: 2.1em;
+    font-weight: 900;
+    color: white
+}
+.title {
+    display: flex;
+    
+}
+.subtitle {
+    font-size: large;
+    font-size: 2.6em;
+    color: #C2B897;
+    font-weight: 900;
+    margin-top: -.5em;
+}
+.titleContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 240;
+}
+.yourText {
+color: #F1C232;
+font-size: 6em;
+font-weight: 900;
+padding-left: 2%;
+}
+.cartonText {
+color:black;
+font-size:6em;
+font-weight: 900;
+}
+
+.container {
+background-color: #FFE598;
+margin:2em;
+display: flex;
+width: 100em;
+height: 13em;
+display: flex;
+align-items: center;
+padding-left: 1em;
+border-radius: 2em;
+justify-content: space-between;
+}
+.half-container {
+    display: flex;
+}
+.IMG {
+    max-width: 10em;
+    border-radius: 2em;
+}
+
+.STitle {
+    font-size: 4em;
+    font-weight: 900;
+    color: #F1C232;
+    margin-top: -.25em;
+}
+.info {
+    margin-left: 2em;
+}
+.SDesc {
+    color:#464040;
+    font-weight:900px;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: -.5em;
+}
+.enter {
+    background-color: #F1C232;
+    border-radius: 25px;
+    padding:.5em;
+    color:#FFFF;
+    font-weight:900;
+    font-size:1.2em;
+    margin-top: .5em;
+}
+
+
+.sec-Half-container {
+    display: flex;
+    margin-right: 1.1em;
+    align-items: center;
+}
+
+.xdiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 10.5em;
+}
+.Xlogo {
+width:4em;
+}
+
+.cost {
+    font-size: 3.5em;
+    font-weight:900;
+    margin-left: 8%;
+    margin-right:8%;
+    float: right;
+
+    
+}

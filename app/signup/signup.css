@@ -1,0 +1,122 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: rgb(241, 193, 50);
+    display: flex;
+    justify-content: center;
+}
+.return {
+    position: absolute;
+}
+
+.back-arrow {
+    width: 5em;
+    height: 5em;
+    padding-left: 1em;
+}
+img {
+    width: 8.5em;
+}
+.first-half {
+    display: flex;
+    align-items: center;
+    margin-top: 1.7em;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 900;
+    color: #F1C232;
+}
+.signIn {
+    font-size: 2.8em;
+    font-weight: 900;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+input {
+    border-width: 5px;
+    width:25em;
+    height:4em;
+    border-color: #000000;
+    border-radius: 40px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.submit {
+    background-color: #F1C232;
+    border-color: #F1C232;
+}
+h4 {
+    font-size: 1em;
+    font-weight: 800;
+    position: absolute;
+    background-color: #FFFFFF;
+    margin-top: .1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.moveUserEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border-width:2px;
+    border-top: #4D4D4D;
+    margin-top:1em;
+    
+}
+.or {
+    position: absolute;
+}
+.orMovingDiv {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    margin-top: .1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.bottomButton {
+    margin-top: 2em;
+    border-width: 5px;
+    width:13em;
+    height:4em;
+    border-color: #000000;
+    border-radius: 40px;
+    padding-left: 1em;
+}
+.bottomButton2 {
+    margin-top: 2em;
+    border-width: 5px;
+    width:10em;
+    height:4em;
+    border-color: #000000;
+    border-radius: 40px;
+    padding-left: 1em;
+}
+.bottomButtons {
+    display: flex;
+    justify-content: space-between;
+}
+p {
+    font-weight: 900;
+}

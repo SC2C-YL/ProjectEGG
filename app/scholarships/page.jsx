@@ -17,13 +17,13 @@ function scholarships() {
             </div>
             <div className="scholars-boxes">
             <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
             <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
-            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Information" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
+            <ScholarshipPreview possibleDeadline = "Deadline Soon" Info="Blah Blah Blah Scholarship; Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah" Title="Scholarship" Odate="##/##/###" Cdate="##/##/###"/>
             
         </div>
         </div>
