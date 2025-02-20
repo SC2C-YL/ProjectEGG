@@ -26,16 +26,16 @@ function signUp() {
                     <hr></hr>
                 </div>
                 <div className="bottomButtons">
-                    <div className="bottomButton">
+                    <button className="bottomButton">
                         <p>new user?</p>
                         <p>Create an account</p>
-                    </div>
-                    <div className="bottomButton2">
+                    </button>
+                    <button className="bottomButton2">
                         <div>
                         <img src="/icons/google.png" className="googleIcon"></img>
                         </div>
                         <p>sign in with google</p>
-                    </div>
+                    </button>
                 </div>
                 
             </div>

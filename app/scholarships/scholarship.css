@@ -57,13 +57,26 @@ h1 {
 .deadline-box {
     align-self: center;
     font-weight: bolder;
-    
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .deadline-text {
     font-weight: bolder;
     color:#FFFFFF;
     margin: .4rem;
+    padding-left: 1;
+}
+.addScholarship {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.grayPlus {
+    width: 2em;
+    height: 2em;
+    margin-top: -6.2em;
+    margin-right: -.5em;
 }
 
 .title-box {
@@ -76,6 +89,7 @@ background-color: #939393;
     font-size: 1.5rem;
     padding:.5rem;
     padding-left: 1rem;
+    color: black;
 }
 
 .Scholar-info-box {
@@ -90,6 +104,7 @@ justify-content: space-between;
 .Scholar-info-text {
 margin:10px;
 padding-left: .5rem;
+color: black;
 }
 
 .Sdates {
@@ -99,11 +114,15 @@ padding-left: .5rem;
     justify-content: space-around;
 }
 .Line {
-    padding-bottom:1rem;
-    color: #4C4646;
+    padding-bottom:.1em;
+    margin-bottom: 1em;
+    background-color: black;
+    width: 90%;
+    
 }
 .Bolder {
     font-weight: bolder;
+    color: black;
 }
 .Apply-box {
     display:flex;
@@ -117,7 +136,8 @@ padding-left: .5rem;
     border-radius: 16px;
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 30%;
+    min-width: 80px;
 }
 
 
