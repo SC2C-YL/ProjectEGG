@@ -30,3 +30,55 @@ text-shadow: 0px 1px, 1px 0px, 1px 1px;
    color:#4C4646;
    margin-bottom: 1rem;
   }
+
+  .positions-container {
+    margin: 2em;
+    
+  }
+  .container {
+    background-color: #939393;
+    width: 20em;
+    height: 25em;
+    min-width: 300px;
+    border-radius: 20px;
+    margin-top: 2.4em;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .grayAddContainer{
+    display: flex;
+    justify-content: flex-end;
+    min-width: 2.5em;
+    width: 18em;
+    margin-bottom: -3em;
+    margin-left: 1.4em;
+}
+  .grayAdd {
+    min-width: 2.5em;
+    min-height: 2.5em;
+    width:1%;
+    margin-bottom:-1em;
+    position: absolute;
+  }
+
+  .img1 {
+    margin-left: 1.4em;
+    margin-top:1.4em;
+    min-width: 15em;
+    width: 85%;
+    height: 55%;
+    min-height: 14em;
+    border-radius: 25px;
+  }
+  .paidTag {
+    background-color: #5AAE5A;
+    width: fit-content;
+    border-radius: 25px;
+    padding: .5em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: large;
+  }

@@ -72,10 +72,10 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
                 <div style={titleBox}>
                     <h2 style={scholarTitle}>{Title}</h2>
                     <button className="addScholarship" onClick={toggleStyling}>
-                    <img src={isActive ? "/icons/addScholarship.png" :"/icons/addedScholarship.png" } className ="grayPlus"/>
+                    <img src={isActive ? "/icons/gray-add.png" :"/icons/addedScholarship.png" } className ="grayPlus"/>
                     </button>
                 </div>
-                <div style={scholarInfoBox}>
+                <Link href="/scholarships/specificS" style={scholarInfoBox}>
                     <p style={scholarInfoText}>{Info}</p>
                     <div>
                         <div style={{display:"flex",justifyContent:"center" }}>
@@ -89,13 +89,8 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
                             <h3 style={Bolder}>Close Date</h3>
                             <h4 style={Bolder}>{Cdate}</h4>
                         </div>
-                        <div className="Apply-box">
-                            <Link href="/scholarships/specificS" style={Apply}>
-                                <button>Apply</button>
-                            </Link>
-                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
     )
 }

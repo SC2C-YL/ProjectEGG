@@ -1,6 +1,10 @@
 import "../app/carton/carton.css"
 
 function Saved({title, description, due, cost}) {
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
 
     return(
         <div className="container">
@@ -18,9 +22,9 @@ function Saved({title, description, due, cost}) {
             </div>
             <div className="sec-Half-container">
                 <h1 className="cost">{cost}</h1>
-                <div className="xdiv">
-                    <img className = "Xlogo" src="/icons/Xmark.png" />
-                </div>
+                    <div className="xdiv">
+                        <img className = "Xlogo" src="/icons/Xmark.png" />
+                    </div>
             </div>
             
         </div>
