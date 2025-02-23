@@ -14,6 +14,7 @@ function Position() {
             <div>
                 <div className="paidTag">Paid</div>
             </div>
+            <h2>-</h2>
         </div>
         </div>
     )
