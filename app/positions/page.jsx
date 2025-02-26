@@ -5,7 +5,7 @@ import FButton from "../../components/filter-grid-button";
 import Position from "../../components/positions";
 function Positions() {
     return(
-        <div>
+        <div className="mainDiv">
             <Nav />
             <div className="H1-Div">
                 <h1>Positions</h1>
@@ -22,7 +22,7 @@ function Positions() {
             </div>
             
             
-            
+
         </div>
     )
 }

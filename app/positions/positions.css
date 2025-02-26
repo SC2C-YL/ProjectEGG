@@ -80,5 +80,16 @@ text-shadow: 0px 1px, 1px 0px, 1px 1px;
     margin-top: 1em;
     color: #FFFFFF;
     font-weight: 900;
-    font-size: large;
+    font-size: 1.1em;
   }
+.h2Title {
+    font-size: 2em;
+    margin-left: 1.4em;
+    margin-top: .2em;
+    font-weight: 900;
+}
+
+html, .mainDiv {
+    background-color: #F1F2ED;
+    height:100%;
+}

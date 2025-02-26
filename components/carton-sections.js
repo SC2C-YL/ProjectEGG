@@ -1,10 +1,10 @@
 import "../app/carton/carton.css"
 
 function Saved({title, description, due, cost}) {
-    function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
+    // function myFunction() {
+    //     var popup = document.getElementById("myPopup");
+    //     popup.classList.toggle("show");
+    //   }
 
     return(
         <div className="container">
