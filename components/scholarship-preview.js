@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import Link  from "next/link";
+import {db} from "../firebase/config";
+import { doc, setDoc } from "firebase/firestore"; 
+import { UserAuth } from "@/context/userContext";
+import { deleteDoc } from "firebase/firestore";
 function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
-
+    const {user} = UserAuth();
     const [isActive, setIsActive] = useState(true);
     const scholarBoxStyle={
         backgroundColor:isActive ? " #4C4646" : "#F1C232",
@@ -51,8 +55,20 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
         fontWeight: "bolder",
         color: isActive ? "black": "white",
     }
-    const toggleStyling = () => {
+    const toggleStyling = async () => {
         setIsActive((prevState) => !prevState);
+        if (isActive === true) {
+            await setDoc(doc(db, "cart", user?.email, "scholarship", Title), {
+                possibleDeadline: possibleDeadline, 
+                title: Title, 
+                info: Info, 
+                openDate: Odate, 
+                closeDate: Cdate
+            })
+        }
+        else {
+            await deleteDoc(doc(db, "cart", user?.email, "scholarship", Title));
+        }
     };
     const Apply = {
     backgroundColor: isActive ? "#939393" : "#AF8400",
