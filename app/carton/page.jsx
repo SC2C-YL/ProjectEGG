@@ -23,7 +23,7 @@ function carton() {
                 <h3 className="subtitle">your saved opportunties</h3>
                 </div>
                 <div>
-                    <img src="/icons/eggCarton.png" />
+                    <img className="eggCount" src="/icons/eggCarton.png" />
                 </div>
             </header>
             <Saved title="Title" description="DescriptionDescription + Description" due="closes 2/10" cost="$40"></Saved>

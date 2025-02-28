@@ -19,6 +19,11 @@ function Positions() {
             </div>
             <div className= "positions-container">
             <Position />
+            <Position />
+            <Position />
+            <Position />
+            <Position />
+            <Position />
             </div>
             
             

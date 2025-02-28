@@ -47,14 +47,16 @@ header {
     font-size: 2.6em;
     color: #C2B897;
     font-weight: 900;
-    margin-top: -.5em;
+    margin-top: -.5ewhat is m;
     text-shadow: 1px 0 #C2B897;
     letter-spacing:1px;
+   
 }
 .titleContainer {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-width: 240;
 }
 .yourText {
@@ -67,6 +69,75 @@ padding-left: 2%;
 color:black;
 font-size:6em;
 font-weight: 900;
+}
+@media (max-width:768px) {
+    .yourText {
+        color: #F1C232;
+        font-size: 10vw;
+        font-weight: 900;
+        padding-left: 2%;
+        }
+        .cartonText {
+        color:black;
+        font-size:10vw;
+       
+        }
+        .subtitle {
+            font-size: large;
+            font-size: 5vw;
+            color: #C2B897;
+            font-weight: 900;
+            margin-top: -.5em;
+            text-shadow: 1px 0 #C2B897;
+            letter-spacing:1px;
+            
+        }
+        .addMoreBackground {
+            display: flex;
+            background-color: #FFD966;
+            align-items: center;
+            width: 8em;
+            max-width: 15em;
+            line-height: 30px;
+            height: 10vw;
+            border-radius: 30px;
+            margin-top: 1em;
+        }
+        .addMoreIcon {
+            max-width: 5vw;
+            margin-left: 1em;
+        }
+        
+        .addMoreText {
+            font-size: 3vw;
+            font-weight: 900;
+            color: white;
+            text-shadow: 1px 0 #FFFF;
+            letter-spacing:1px;
+            text-shadow: 0px 1px, 1px 0px, 1px 1px;
+        }
+        .eggCount {
+            display: none;
+        }
+        .titleContainer {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header {
+            /* height: 9vw; */
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        .title {
+            display: flex;
+            /* width: */
+        }
+        
+        
 }
 
 .container {
@@ -130,9 +201,13 @@ width: 96%;
     justify-content: flex-end;
     align-items: flex-start;
     height: 10.5em;
+    margin-right: 20px;
+    
 }
 .Xlogo {
-width:4em;
+    min-width: 30px;
+    max-height: 30px;
+    width: 30px;
 }
 
 .cost {
@@ -145,7 +220,91 @@ width:4em;
     font-weight: 900;
 }
 
-
+@media (max-width: 700px) {
+    .container {
+        background-color: #FFE598;
+        margin-left: .5em;
+        margin-top:2em;
+        margin-bottom:2em;
+        display: flex;
+        height: 10em;
+        align-items: center;
+        border-radius: 2em;
+        justify-content: space-between;
+        max-width: none;
+        width: 96%;
+        margin-bottom: 0em;
+        }
+        .half-container {
+            display: flex;
+            
+            
+        }
+        .IMG {
+            max-width: 6em;
+            border-radius: 2em;
+        }
+        
+        .STitle {
+            font-size: 9vw;
+            font-weight: 900;
+            color: #F1C232;
+            margin-top: -.25em;
+        }
+        .info {
+       margin-left: 10px;
+        }
+        .SDesc {
+            color:#464040;
+            font-weight:900px;
+            font-size: 3vw;
+            font-weight: 900;
+            margin-top: -.5em;
+        }
+        .enter {
+            background-color: #F1C232;
+            border-radius: 25px;
+            padding:.5em;
+            color:#FFFF;
+            font-weight:900;
+            font-size:3vw;
+            margin-top: .5em;
+        }
+        
+        
+        .sec-Half-container {
+            display: flex;
+            margin-right: 1.1em;
+            align-items: flex-start;
+            margin-left: -1em;
+        }
+        
+        .xdiv {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            height: 10.5em;
+            margin-top: 1em;
+            margin-right: 5px;
+           
+        }
+        .Xlogo {
+        
+        min-width: 25px;
+        max-height: 25px;
+        }
+        
+        .cost {
+            font-size: 6vw;
+            font-weight:900;
+            
+            margin-right:8%;
+            float: right;
+            color:black;
+            font-weight: 900;
+            padding-top: 1.5em;
+        }
+}
 /* POP UP */
 
 .popup {

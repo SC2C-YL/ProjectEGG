@@ -1,7 +1,7 @@
 "use client"
 import {useState} from 'react';
 
-function Position() {
+function Position(Paid) {
     const [isActive, setIsActive] = useState(true);
     const toggleStyling = () => {
         setIsActive((prevState) => !prevState);
@@ -14,7 +14,8 @@ function Position() {
         borderRadius: "20px",
         marginTop: "2.4em",
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        
     }
     const grayAdd = {
         minWidth: "2.5em",
@@ -23,10 +24,15 @@ function Position() {
         marginBottom: "-1em",
         position: "absolute",
     }
+    const mainDiv = {
+        marginBottom: "3em",
+        
+        
+    }
 
 
     return(
-        <div>
+        <div style={mainDiv} >
             <button className="grayAddContainer" onClick={toggleStyling}>
                 <img className="grayAdd" src= {isActive ? "/icons/gray-add.png": "/icons/added.png"} />
             </button>

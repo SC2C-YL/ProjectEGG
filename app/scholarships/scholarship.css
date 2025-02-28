@@ -46,7 +46,17 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}   
+}
+@media (max-width:768px) {
+    .filter-gird {
+        display: flex;
+        overflow: auto;
+       white-space: nowrap;
+       justify-content: flex-start;
+       width: 100%;
+    }
+   
+  }
 
 .scholar-box {
     background-color: #4C4646;
