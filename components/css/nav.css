@@ -157,9 +157,10 @@
   /* Responsive Navbar */
   .hamburger {
     display: none;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     padding: 10px;
+
   }
   
   .nav-content {
@@ -170,6 +171,7 @@
   @media (max-width: 768px) {
     .hamburger {
       display: block;
+      margin-left: .5em;
     }
   
     .nav-content {
@@ -198,6 +200,7 @@
       width: 100%;
       text-align: center;
       padding: 15px 0;
+      color: white;
     }
   
     .search-container {
@@ -206,10 +209,17 @@
     }
     .bars {
      font-weight: bolder;
-     text-shadow: 2px 0 #888888;
      letter-spacing:2px;
-     text-shadow: -1px 1px, 1px 1px, 1px 1px;
-     background-color: #F1C232; 
+     background-color: #F1C232;
+     color: white; 
+    }
+    .logo-container::before, .logo,.logo-container {
+      display: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      
     }
   }
   

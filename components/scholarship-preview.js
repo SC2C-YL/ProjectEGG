@@ -9,7 +9,7 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
         backgroundColor:isActive ? " #4C4646" : "#F1C232",
         marginTop: "1rem",
         marginLeft: "1rem",
-        minWidth: "160px",
+        minWidth: "300px",
         maxWidth: "22%",
         borderRadius: "16px",
         display: "flex",
@@ -25,6 +25,7 @@ function ScholarshipPreview({ possibleDeadline, Title, Info, Odate, Cdate}) {
         fontSize: "1.5rem",
         padding:".5rem",
         paddingLeft: "1rem",
+        overflow: "hidden",
         color: isActive ? "black":"white",
     }
     const scholarInfoBox={

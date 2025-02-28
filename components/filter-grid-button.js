@@ -16,6 +16,7 @@ function FButton({filter}) {
        fontSize: "1.5rem",
        color: isActive ? "#4C4646": "#AF8400",
        marginBottom: "1rem",
+       
     }
 
     const toggleStyling = () => {

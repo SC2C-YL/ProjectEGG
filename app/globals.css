@@ -149,3 +149,8 @@ body {
 .indicator.active {
   background-color: white;
 }
+
+html {
+  background-color: #F1F2ED;
+  height:100%;
+}

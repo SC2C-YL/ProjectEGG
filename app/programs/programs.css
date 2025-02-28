@@ -2,7 +2,6 @@
 .button-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     padding: 20px;
     padding-top:20px;
@@ -74,4 +73,29 @@
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
+}
+
+.programBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 15%; /* Adjust this percentage as needed */
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    background-color: #FFFF;
+    min-width: 180px;
+}
+
+.program-image {
+    width: 70%;
+}
+.ptitle {
+    font-size: 10%;
 }

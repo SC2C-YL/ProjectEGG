@@ -4,14 +4,21 @@ html, body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 13vw;
     font-weight: bold;
     color: #F1C232
+
 }
 .filter-gird {
     display: flex;
     justify-content: center;
 
+}
+@media (max-width:768px) {
+    .filter-gird {
+        display: flex;
+        overflow: hidden;
+    }
 }
 .FButton {
   margin-left: 1rem;

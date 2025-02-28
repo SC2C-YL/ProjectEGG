@@ -10,7 +10,7 @@ function programs() {
             <Card image="/icons/tutoring.png" path="./programs/tutoring" title="Tutoring" />
             <Card image='/icons/SAT.png' path="/programs/SAT" title="SAT" />
             <Card image='/icons/kids.png' path="/programs/kids" title="Kids" />
-            <Card image='/icons/college.png' path="/programs/colleges" title="College" />
+            <Card image='/icons/college.png' path="/programs/highschool" title="Highschool" />
             </div>
         </div>
     )
