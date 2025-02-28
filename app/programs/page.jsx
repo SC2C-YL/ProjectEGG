@@ -6,7 +6,7 @@ function programs() {
     return(
         <div>
             <Nav />
-            <div class="button-grid">
+            <div className="button-grid">
             <Card image="/icons/tutoring.png" path="./programs/tutoring" title="Tutoring" />
             <Card image='/icons/SAT.png' path="/programs/SAT" title="SAT" />
             <Card image='/icons/kids.png' path="/programs/kids" title="Kids" />
