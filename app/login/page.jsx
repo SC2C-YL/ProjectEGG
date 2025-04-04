@@ -1,6 +1,10 @@
+"use client"
+
 import "./login.css";
 import Input from "../../components/input"
+import { useRouter } from "next/navigation";
 function signUp() {
+    const router = useRouter();
     return (
         <>
         <nav>
@@ -12,13 +16,11 @@ function signUp() {
             <h1 className="title">Everyone Gets Greatness</h1>
             <h2 className="signIn">Sign In</h2>
             <div>
-                <form>
                     <Input h4="email/username" type="text" name="username" />
                     <Input h4="password" type="password" />
                 <div>
-                    <input className="submit" type="submit" value="Submit" />
+                    <input className="submit" type="submit" onClick={() => router.push("/")}/>
                 </div>
-                </form>
                 <div>
                     <div className="orMovingDiv">
                         <h5>OR</h5>

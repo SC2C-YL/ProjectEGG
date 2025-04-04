@@ -4,14 +4,17 @@ import "./signup.css"
 import Input from "../../components/input"
 import { useState } from "react";
 import { UserAuth } from "@/context/userContext";
+import { useRouter } from "next/navigation";
 function login() {
+    const router = useRouter()
     const { createUser } = UserAuth();
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handleSubmit = async () => {
-        console.table({ username, email, password })
-        await createUser(email, password)
+        await createUser(email, password).then(() => {
+            router.push("/");
+        })
     }
     return (
         <div>

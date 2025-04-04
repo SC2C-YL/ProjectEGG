@@ -3,9 +3,11 @@
 import "./css/nav.css";
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { UserAuth } from "@/context/userContext";
 
 
 function Nav() {
+  const {user} = UserAuth();
     useEffect(() => {
         const hamburger = document.querySelector('.hamburger');
         //button test!
@@ -39,6 +41,8 @@ function Nav() {
         <Link href="/scholarships" className="bars">Scholarships</Link>
         <Link href="/positions"className="bars">Positions</Link>
         <Link href="/support"className="bars">Support</Link>
+        {!user && <Link href ="/login" className="bars">Login</Link>}
+        {!user && <Link href ="/signup" className="bars">Signup</Link>}
       </div>
       <div className="search-container">
         <input type="text" placeholder="Search" className="search-bar" />
