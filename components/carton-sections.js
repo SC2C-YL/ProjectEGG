@@ -2,7 +2,7 @@ import { removeItemFromCart } from "@/app/api/cartService";
 import "../app/carton/carton.css"
 import { UserAuth } from "@/context/userContext";
 
-function Saved({title, description, due, cost}) {
+function Saved({title, description, due, cost, type}) {
     // function myFunction() {
     //     var popup = document.getElementById("myPopup");
     //     popup.classList.toggle("show");
@@ -10,7 +10,7 @@ function Saved({title, description, due, cost}) {
     const {user} = UserAuth()
 
     const handleDeleteCart = () => {
-        removeItemFromCart(user?.email, title);
+        removeItemFromCart(user?.email, type, title);
     }
 
     return(

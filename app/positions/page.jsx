@@ -11,19 +11,19 @@ function Positions() {
                 <h1>Positions</h1>
             </div>
             <div className="filter-gird">
-                <FButton filter="volenteer"/>
+                <FButton filter="volunteer"/>
                 <FButton filter="job type"/>
                 <FButton filter="paid"/>
                 <FButton filter="unpaid"/>
                 <FButton filter="leadership"/>
             </div>
             <div className= "positions-container">
-            <Position />
-            <Position />
-            <Position />
-            <Position />
-            <Position />
-            <Position />
+            <Position Title="Title" Type="volunteer"/>
+            <Position Title="Title" Type="paid"/>
+            <Position Title="Title" Type="unpaid"/>
+            <Position Title="Title" Type="leadership"/>
+            <Position Title="Title" Type="volunteer"/>
+            <Position Title="Title" Type="paid"/>
             </div>
             
             

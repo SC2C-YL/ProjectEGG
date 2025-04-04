@@ -1,24 +1,65 @@
-import {id} from "uuidv4"
+import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "@/firebase/config";
-import { collection, deleteDoc, doc, getDocs, onSnapshot } from "firebase/firestore";
 
 export const subscribeToCart = (userEmail, callback) => {
-    const itemsRef = collection(db, "cart", userEmail, "scholarship");
-  
-    return onSnapshot(itemsRef, (snapshot) => {
-      const items = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      callback(items);
-    }, (error) => {
-      console.error("Error fetching cart items:", error);
-    });
-  };
+  const scholarshipRef = collection(db, "cart", userEmail, "scholarship");
+  const jobsRef = collection(db, "cart", userEmail, "jobs");
 
-export const removeItemFromCart = async (userEmail, Title) => {
-    try {
-      const itemRef = doc(db, "cart", userEmail, "scholarship", Title);
-      await deleteDoc(itemRef);
-      console.log("deleted")
-    } catch (error) {
-      console.error("Error removing item from cart:", error);
+  const unsubscribeScholarships = onSnapshot(
+    scholarshipRef,
+    (snapshot) => {
+      const scholarshipItems = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        title: doc.data().title || doc.id,
+        description: doc.data().info || "No description available",
+        due: doc.data().closeDate || "N/A",
+        cost: doc.data().cost || "N/A",
+        type: "scholarship",
+      }));
+      callback((prevItems) => [
+        ...prevItems.filter(item => item.type !== "scholarship"),
+        ...scholarshipItems
+      ]);
+    },
+    (error) => {
+      console.error("Error fetching scholarships:", error);
     }
+  );
+
+  const unsubscribeJobs = onSnapshot(
+    jobsRef,
+    (snapshot) => {
+      const jobItems = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        title: doc.data().title || doc.id,
+        description: doc.data().info || "No description available",
+        due: doc.data().closeDate || "N/A",
+        cost: doc.data().cost || "N/A",
+        type: "job",
+      }));
+      callback((prevItems) => [
+        ...prevItems.filter(item => item.type !== "job"),
+        ...jobItems
+      ]);
+    },
+    (error) => {
+      console.error("Error fetching jobs:", error);
+    }
+  );
+
+  return () => {
+    unsubscribeScholarships();
+    unsubscribeJobs();
   };
+};
+
+
+export const removeItemFromCart = async (userEmail, type, title) => {
+  try {
+      const itemRef = doc(db, "cart", userEmail, type, title);  // Uses type to remove correctly
+      await deleteDoc(itemRef);
+      console.log(`Deleted ${type}: ${title}`);
+  } catch (error) {
+      console.error("Error removing item from cart:", error);
+  }
+};
